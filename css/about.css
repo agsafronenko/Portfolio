@@ -1,0 +1,112 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  max-width: 400px;
+}
+
+.about-square {
+  width: 350px;
+  height: 350px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-square::before {
+  transform: translate(var(--pseudo-x, 0), var(--pseudo-y, 0));
+}
+
+.about-square-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-square-image.active {
+  opacity: 1;
+}
+
+.image-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.image-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.about-square::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #9ba3b0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: var(--card-bg);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(94, 129, 172, 0.2);
+}

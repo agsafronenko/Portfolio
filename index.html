@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">DevPortfolio</a>
+          <div class="nav-links" id="navLinks">
+            <button class="close-menu" id="closeMenu">×</button>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 id="heroTitle">Hi, I'm Alexander Safronenko</h1>
+            <p id="heroSubtitle">Full-stack developer specializing in React, Python, JavaScript, TypeScript, and C#. I create elegant solutions to complex problems.</p>
+            <div class="cta-buttons" id="heroButtons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-container" id="profileImage">
+              <img src="/images/forAvatar.jpg" alt="Profile Photo" class="profile-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title section-fade-in">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text section-fade-in">
+            <p>I'm a passionate software developer with expertise in building responsive and dynamic web applications. With a strong foundation in both frontend and backend technologies, I create seamless user experiences backed by robust server-side logic.</p>
+            <p>My journey in software development began 3 years ago, and since then, I've worked on various projects ranging from small business websites to complex enterprise applications. I enjoy solving challenging problems and continuously expanding my skill set.</p>
+            <div class="skills">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Redux</span>
+            </div>
+          </div>
+          <div class="about-image section-fade-in">
+            <div class="about-square" id="aboutSquare">
+              <img src="/images/forAvatar.jpg" alt="Profile Photo" class="about-square-image active" />
+              <img src="/images/sudoku.png" alt="Photo 2" class="about-square-image" />
+              <img src="/images/tetris.png" alt="Photo 3" class="about-square-image" />
+              <img src="/images/calculator.png" alt="Photo 4" class="about-square-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title section-fade-in">
+          <h2>My Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" id="project1">
+            <div class="project-image">
+              <img src="/images/sudoku.png" alt="Project 1" />
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <p>A full-featured e-commerce platform with product catalog, shopping cart, and secure payment processing using Stripe API.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="project2">
+            <div class="project-image">
+              <img src="/images/tetris.png" alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <div class="project-tags">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="project3">
+            <div class="project-image">
+              <img src="/images/calculator.png" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3>Data Visualization Dashboard</h3>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Django</span>
+                <span class="project-tag">D3.js</span>
+              </div>
+              <p>An interactive data dashboard that processes and visualizes complex datasets with customizable charts and real-time filtering.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="project4">
+            <div class="project-image">
+              <img src="/images/sudoku.png" alt="Project 4" />
+            </div>
+            <div class="project-content">
+              <h3>Smart Home Controller</h3>
+              <div class="project-tags">
+                <span class="project-tag">C#</span>
+                <span class="project-tag">.NET Core</span>
+                <span class="project-tag">IoT</span>
+              </div>
+              <p>A smart home automation system that integrates with various IoT devices through a unified control interface and scheduling capabilities.</p>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title section-fade-in">
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info section-fade-in">
+            <p>I'm currently available for freelance work and open to new opportunities. If you have a project that needs my expertise or want to discuss potential collaborations, feel free to reach out.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">✉</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>agsafronenko@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>Telegram</h4>
+                  <p>@AlexanderZack</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Montenegro, Herceg Novi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form section-fade-in">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo"><img src="images/s4_1.png" /></div>
+          <div class="social-links">
+            <a href="https://github.com/agsafronenko" class="social-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/safronenko/" class="social-link">LinkedIn</a>
+            <a href="https://www.codewars.com/users/agsafronenko" class="social-link">Codewars</a>
+          </div>
+          <div class="credits">Designed & developed by Alexander Safronenko</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/forms.js"></script>
+  </body>
+</html>
