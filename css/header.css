@@ -18,13 +18,18 @@ nav {
   align-items: center;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.8rem;
-  background: linear-gradient(90deg, #5e81ac, #a3be8c);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo img {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  object-fit: contain;
+}
+
+.logo img:hover {
+  background-color: #4c566a;
+  border-radius: 7px;
+  opacity: 10%;
 }
 
 .nav-links {
