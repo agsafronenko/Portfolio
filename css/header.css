@@ -1,9 +1,12 @@
+/* Add this to your header.css file, replacing the previous styles */
+
 header {
   padding: 1.5rem 0;
   position: fixed;
   width: 100%;
   z-index: 100;
   transition: all 0.3s ease;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .header-scrolled {
@@ -16,12 +19,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  max-width: 400px;
 }
 
 .logo img {
-  margin: 0;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   display: block;
   object-fit: contain;
 }
@@ -74,7 +83,36 @@ nav {
   cursor: pointer;
 }
 
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1002;
+}
+
 @media (max-width: 768px) {
+  /* Mobile navigation layout */
+  nav {
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 200px; /* Reduce logo size on mobile */
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    position: static; /* Remove absolute positioning */
+    margin-left: auto; /* Push to the right */
+    z-index: 100;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -84,9 +122,11 @@ nav {
     background-color: var(--card-bg);
     flex-direction: column;
     padding: 2rem;
+    padding-top: 4rem;
     gap: 1.5rem;
     transition: all 0.3s ease;
     z-index: 1000;
+    align-items: flex-start;
   }
 
   .nav-active {
@@ -94,23 +134,27 @@ nav {
     box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
   }
 
-  .mobile-menu-btn {
-    display: block;
-    z-index: 1001;
-  }
-
-  .mobile-menu-btn.active {
-    color: var(--accent);
-  }
-
   .close-menu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1.5rem;
-    cursor: pointer;
+    display: block;
+  }
+
+  /* Container adjustments */
+  header .container {
+    width: 90%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Very small screens adjustments */
+@media (max-width: 375px) {
+  .logo {
+    max-width: 150px; /* Further reduce logo size on very small screens */
+  }
+
+  header .container {
+    width: 95%;
+    padding: 0 10px;
   }
 }

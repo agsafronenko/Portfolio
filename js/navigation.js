@@ -22,6 +22,14 @@ closeMenu.addEventListener("click", () => {
   mobileMenuBtn.classList.remove("active");
 });
 
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (navLinks.classList.contains("nav-active") && !navLinks.contains(e.target) && e.target !== mobileMenuBtn) {
+    navLinks.classList.remove("nav-active");
+    document.body.style.overflow = "";
+  }
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -29,7 +37,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     // Close mobile menu if open
     navLinks.classList.remove("nav-active");
-    mobileMenuBtn.classList.remove("active");
+    document.body.style.overflow = "";
 
     const targetId = this.getAttribute("href");
     const targetElement = document.querySelector(targetId);
