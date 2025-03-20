@@ -1,36 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Hero Section Animations
-  gsap.to("#heroTitle", {
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    ease: "power3.out",
-  });
-
-  gsap.to("#heroSubtitle", {
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    delay: 0.2,
-    ease: "power3.out",
-  });
-
-  gsap.to("#heroButtons", {
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    delay: 0.4,
-    ease: "power3.out",
-  });
-
-  gsap.to("#profileImage", {
-    opacity: 1,
-    x: 0,
-    duration: 0.8,
-    delay: 0.3,
-    ease: "power3.out",
-  });
-
   // Scroll Animations
   gsap.registerPlugin(ScrollTrigger);
 
@@ -94,20 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "back.out(1.7)",
   });
 });
-
-// Add typing effect to the title
-const heroTitle = document.getElementById("heroTitle");
-const originalText = heroTitle.innerHTML;
-heroTitle.innerHTML = "";
-
-let i = 0;
-function typeWriter() {
-  if (i < originalText.length) {
-    heroTitle.innerHTML += originalText.charAt(i);
-    i++;
-    setTimeout(typeWriter, 50);
-  }
-}
-
-// Start typing effect after initial animation
-setTimeout(typeWriter, 1000);
