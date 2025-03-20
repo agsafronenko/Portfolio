@@ -88,3 +88,9 @@
 .project-link:hover {
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

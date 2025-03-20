@@ -112,3 +112,15 @@ button[type="submit"]:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(94, 129, 172, 0.3);
 }
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .profile-container {
+    width: 280px;
+    height: 280px;
+  }
+}

@@ -68,3 +68,44 @@ nav {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--card-bg);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-active {
+    right: 0;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+  }
+
+  .mobile-menu-btn.active {
+    color: var(--accent);
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

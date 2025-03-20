@@ -68,3 +68,19 @@ footer {
   color: #9ba3b0;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .credits {
+    margin-top: 0.5rem;
+  }
+}

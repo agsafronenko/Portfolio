@@ -65,3 +65,24 @@
   opacity: 0;
   transform: translateY(30px);
 }
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}

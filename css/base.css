@@ -48,3 +48,9 @@ body {
   background-color: rgba(94, 129, 172, 0.1);
   transform: translateY(-3px);
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}

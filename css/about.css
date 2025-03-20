@@ -110,3 +110,26 @@
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(94, 129, 172, 0.2);
 }
+
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-square {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-square::before {
+    top: 15px;
+    left: 15px;
+  }
+}
