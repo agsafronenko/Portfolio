@@ -63,8 +63,8 @@
   transform: translateY(30px);
 }
 
-#heroSubtitle {
-  font-zise: 1rem;
+.hero h4 {
+  font-size: 1.3rem;
 }
 
 .cta-buttons {
@@ -120,6 +120,6 @@
   }
 
   .hero h4 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

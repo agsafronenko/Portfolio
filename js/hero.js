@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     revealDuration: 3500,
     cursorBlinkRate: 500,
     titleCharRevealRate: 50,
-    subtitleStartDelay: 2000,
+    subtitleStartDelay: 1000,
     typingSpeed: 30,
     pauseBeforeShuffle: 750,
     pauseBeforeNextTech: 750,
