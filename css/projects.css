@@ -48,6 +48,7 @@
 .project-content h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .project-content p {
@@ -55,13 +56,25 @@
   color: #9ba3b0;
   line-height: 1.6;
   flex: 1;
+  text-align: justify;
+}
+
+.project-content ul {
+  margin-top: -1.5rem;
+  margin-bottom: 1.5rem;
+  color: #9ba3b0;
+  line-height: 1.6;
+  flex: 1;
+  margin-left: 1.5rem;
+  text-align: justify;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.3rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .project-tag {
@@ -74,6 +87,7 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  justify-content: space-evenly;
 }
 
 .project-link {
@@ -87,6 +101,10 @@
 
 .project-link:hover {
   color: var(--accent);
+}
+
+.note {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
