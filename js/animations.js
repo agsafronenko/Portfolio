@@ -47,18 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
     });
   });
-
-  // Contact Form Animation
-  const contactForm = document.querySelector(".contact-form");
-  gsap.from(contactForm, {
-    scrollTrigger: {
-      trigger: contactForm,
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    opacity: 0,
-    scale: 0.95,
-    duration: 0.8,
-    ease: "back.out(1.7)",
-  });
 });
