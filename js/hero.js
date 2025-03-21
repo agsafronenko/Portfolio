@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Animation timing variables in milliseconds
   const TIMING = {
     imageRevealDuration: 500,
-    heroTitleDuration: 2000,
+    heroTitleDuration: 1500,
     heroButtonsDelay: 9000,
     profileImageDelay: 150,
     shuffleDuration: 500,
     revealDuration: 3500,
     cursorBlinkRate: 500,
     titleCharRevealRate: 50,
-    subtitleStartDelay: 1000,
+    subtitleStartDelay: 300,
     typingSpeed: 30,
     pauseBeforeShuffle: 750,
     pauseBeforeNextTech: 750,
