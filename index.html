@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css" />
   </head>
   <body>
     <header id="header">
       <div class="container">
         <nav>
           <a href="#hero" class="logo">
-            <img src="images/s4_2.png" alt="Alexander Safronenko Logo" />
+            <img src="images/hero/signature.png" alt="Alexander Safronenko Logo" />
           </a>
           <div class="nav-links" id="navLinks">
             <button class="close-menu" id="closeMenu">×</button>
@@ -23,9 +24,12 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             <div class="social-links">
-              <a href="https://github.com/agsafronenko" target="_blank" class="social-link"> <i class="fab fa-github"></i> GitHub </a>
-              <a href="https://www.codewars.com/users/agsafronenko" target="_blank" class="social-link"> <i class="fab fa-codewars"></i> CodeWars </a>
-              <a href="https://www.linkedin.com/in/safronenko" target="_blank" class="social-link"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+              <a href="https://github.com/agsafronenko" target="_blank" class="social-link"> <img src="images/icons/github.svg" alt="GitHub icon" /> GitHub </a>
+              <a href="https://www.codewars.com/users/agsafronenko" target="_blank" class="social-link">
+                <img src="images/icons/codewars.svg" alt="Codewars icon" />
+                CodeWars
+              </a>
+              <a href="https://www.linkedin.com/in/safronenko" target="_blank" class="social-link"> <img src="images/icons/linkedin.svg" alt="Linkedin icon" /> LinkedIn </a>
             </div>
           </div>
           <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -46,7 +50,7 @@
           </div>
           <div class="hero-image">
             <div class="profile-container" id="profileImage">
-              <img src="images/forAvatar.jpg" alt="Profile Photo" class="profile-image" />
+              <img src="images/hero/washington.jpg" alt="Profile Photo" class="profile-image" />
             </div>
           </div>
         </div>
@@ -60,30 +64,51 @@
         </div>
         <div class="about-content">
           <div class="about-text section-fade-in">
-            <p>I'm a passionate software developer with expertise in building responsive and dynamic web applications. With a strong foundation in both frontend and backend technologies, I create seamless user experiences backed by robust server-side logic.</p>
-            <p>My journey in software development began 3 years ago, and since then, I've worked on various projects ranging from small business websites to complex enterprise applications. I enjoy solving challenging problems and continuously expanding my skill set.</p>
-            <div class="skills">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">C#</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">REST API</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Redux</span>
-            </div>
+            <p>I'm a software developer with expertise in both frontend and backend technologies.</p>
+            <p>
+              Currently, I am living and working from <a href="https://www.google.com/maps?q=Herceg+Novis,+Montenegro" target="_blank">Herceg&nbsp;Novi,&nbsp;Montenegro</a>, a coastal town surrounded by mountains and the Adriatic Sea. As a digital nomad, traveling inspires my creativity and broadens
+              my perspective.
+            </p>
+            <p>
+              Coding started as a hobby and grew into my career. I enjoy coding challenges and am ranked <a href="https://www.codewars.com/users/agsafronenko" target="_blank">1&nbsp;kyu on CodeWars</a> (one of the highest ranks). With 3 years of experience, I've worked on projects from small
+              websites to complex enterprise applications.
+            </p>
+            <p>The best part of coding for me is the immense satisfaction that comes from cracking a solution to a problem that initially seemed impossible.</p>
           </div>
           <div class="about-image section-fade-in">
             <div class="about-square" id="aboutSquare">
-              <img src="images/forAvatar.jpg" alt="Profile Photo" class="about-square-image active" />
-              <img src="images/sudoku.png" alt="Photo 2" class="about-square-image" />
-              <img src="images/tetris.png" alt="Photo 3" class="about-square-image" />
-              <img src="images/calculator.png" alt="Photo 4" class="about-square-image" />
+              <img src="images/hero/new_york.JPG" alt="Profile Photo" class="about-square-image active" />
+              <img src="images/hero/new_york2.JPG" alt="Profile Photo" class="about-square-image" />
+              <img src="images/hero/new_vegas.JPG" alt="Profile Photo" class="about-square-image" />
+              <img src="images/hero/los_angeles.JPG" alt="Profile Photo" class="about-square-image" />
+              <img src="images/hero/chicago.JPG" alt="Profile Photo" class="about-square-image" />
+              <img src="images/hero/san_francisco.JPG" alt="Profile Photo" class="about-square-image" />
+              <img src="images/hero/new_vegas2.JPG" alt="Profile Photo" class="about-square-image" />
             </div>
+          </div>
+        </div>
+        <div class="section-title section-fade-in">
+          <h4>Some of the technologies I work with:</h4>
+
+          <div class="skills">
+            <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+            <span class="skill-tag"><i class="devicon-typescript-plain"></i> TypeScript</span>
+            <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
+            <span class="skill-tag"><i class="devicon-csharp-plain"></i> C#</span>
+            <span class="skill-tag"><i class="devicon-nextjs-plain"></i> Next.js</span>
+            <span class="skill-tag"><i class="devicon-react-original"></i> React</span>
+            <span class="skill-tag"><i class="devicon-redux-original"></i> Redux</span>
+            <span class="skill-tag"><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</span>
+            <span class="skill-tag"><i class="devicon-bootstrap-plain"></i> Bootstrap</span>
+            <span class="skill-tag"><i class="devicon-jquery-plain"></i> jQuery</span>
+            <span class="skill-tag"><i class="devicon-sass-original"></i> Sass</span>
+            <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+            <span class="skill-tag"><i class="devicon-express-original"></i> Express.js</span>
+            <span class="skill-tag"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+            <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+            <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+            <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span class="skill-tag"><i class="devicon-github-original"></i> GitHub & GitLab</span>
           </div>
         </div>
       </div>
@@ -92,12 +117,12 @@
     <section id="projects" class="projects">
       <div class="container">
         <div class="section-title section-fade-in">
-          <h2>My Projects</h2>
+          <h2>My Demo Projects</h2>
         </div>
         <div class="projects-grid">
           <div class="project-card" id="project1">
             <div class="project-image">
-              <img src="images/sudoku.png" alt="Project 1" />
+              <img src="images/projects/sudoku.png" alt="Project 1" />
             </div>
             <div class="project-content">
               <h3>E-Commerce Platform</h3>
@@ -116,7 +141,7 @@
 
           <div class="project-card" id="project2">
             <div class="project-image">
-              <img src="images/tetris.png" alt="Project 2" />
+              <img src="images/projects/tetris.png" alt="Project 2" />
             </div>
             <div class="project-content">
               <h3>Task Management App</h3>
@@ -135,7 +160,7 @@
 
           <div class="project-card" id="project3">
             <div class="project-image">
-              <img src="images/calculator.png" alt="Project 3" />
+              <img src="images/projects/calculator.png" alt="Project 3" />
             </div>
             <div class="project-content">
               <h3>Data Visualization Dashboard</h3>
@@ -154,7 +179,7 @@
 
           <div class="project-card" id="project4">
             <div class="project-image">
-              <img src="images/sudoku.png" alt="Project 4" />
+              <img src="images/projects/sudoku.png" alt="Project 4" />
             </div>
             <div class="project-content">
               <h3>Smart Home Controller</h3>
@@ -234,7 +259,7 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo"><img src="images/s4_2.png" /></div>
+          <div class="footer-logo"><img src="images/hero/signature.png" /></div>
           <div class="social-links">
             <a href="https://github.com/agsafronenko" class="social-link">GitHub</a>
             <a href="https://www.linkedin.com/in/safronenko/" class="social-link">LinkedIn</a>
@@ -246,8 +271,9 @@
     </footer>
     <script src="js/header.js"></script>
     <script src="js/hero.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/animations.js"></script>
-
+    <script src="js/modal.js"></script>
     <script src="js/effects.js"></script>
     <script src="js/interactions.js"></script>
     <script src="js/forms.js"></script>

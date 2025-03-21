@@ -5,6 +5,17 @@
   align-items: center;
 }
 
+.about-text p a {
+  color: var(--text);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.about-text p a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 .about-image {
   flex: 1;
   position: relative;
@@ -81,12 +92,15 @@
 
 .about-text {
   flex: 1;
+  text-align: justify;
 }
 
 .about-text p {
+  margin: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.8;
   color: #9ba3b0;
+  text-align: justify;
 }
 
 .skills {
@@ -94,6 +108,8 @@
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 2rem;
+  justify-content: center;
+  gap: 15px;
 }
 
 .skill-tag {
@@ -103,12 +119,20 @@
   font-size: 0.9rem;
   transition: all 0.3s ease;
   cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
 }
 
 .skill-tag:hover {
   background-color: var(--accent);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(94, 129, 172, 0.2);
+}
+
+.skill-tag i {
+  margin-right: 5px;
 }
 
 @media (max-width: 992px) {
@@ -131,5 +155,9 @@
   .about-square::before {
     top: 15px;
     left: 15px;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
   }
 }
