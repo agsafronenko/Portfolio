@@ -6,7 +6,7 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -28,41 +28,6 @@ footer {
   max-width: 200px;
   display: block;
   object-fit: contain;
-}
-
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social-link {
-  color: var(--text);
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  position: relative;
-  padding-bottom: 0.2rem;
-}
-
-.social-link:hover {
-  color: var(--accent);
-  transform: translateY(-3px);
-}
-
-.social-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #5e81ac, #a3be8c);
-  transition: width 0.3s ease;
-}
-
-.social-link:hover::after {
-  width: 100%;
 }
 
 .credits {
