@@ -7,38 +7,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle mobile menu
   mobileMenuBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent event bubbling
-
-    // Ensure the menu appears at the top of the viewport
+    e.stopPropagation();
     navLinks.style.top = "0";
     navLinks.classList.add("nav-active");
-
-    // Make sure close button is positioned correctly
     closeMenu.style.display = "flex";
-
     mobileMenuBtn.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+    document.body.style.overflow = "hidden";
   });
 
   // Close menu function
   const closeNavMenu = () => {
     navLinks.classList.remove("nav-active");
     mobileMenuBtn.classList.remove("active");
-    document.body.style.overflow = ""; // Re-enable scrolling
+    document.body.style.overflow = "";
   };
 
   // Close menu when X is clicked
   closeMenu.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent event bubbling
+    e.stopPropagation();
     closeNavMenu();
   });
 
   // Close mobile menu when clicking outside
   document.addEventListener("click", (e) => {
-    if (!navLinks.contains(e.target) && e.target !== mobileMenuBtn) {
-      if (navLinks.classList.contains("nav-active")) {
-        closeNavMenu();
-      }
+    if (!navLinks.contains(e.target) && e.target !== mobileMenuBtn && navLinks.classList.contains("nav-active")) {
+      closeNavMenu();
     }
   });
 
@@ -69,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = "";
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
       if (window.scrollY >= sectionTop - 150) {
         current = section.getAttribute("id");
       }
