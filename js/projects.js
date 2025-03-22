@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Project Cards Animation
+  // Animate project cards on scroll
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach((card, index) => {
     gsap.to(card, {
