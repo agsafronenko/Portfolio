@@ -43,18 +43,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(94, 129, 172, 0.1);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
 }
 
 .contact-method:hover .contact-icon {
-  background-color: var(--accent);
-  color: white;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(94, 129, 172, 0.2);
 }
 
 .contact-method img {
@@ -121,11 +113,11 @@
 .open-btn {
   text-decoration: none;
   background-color: rgba(163, 190, 140, 0.1);
-  color: #a3be8c;
+  color: #81a1c1;
 }
 
 .open-btn:hover {
-  background-color: #a3be8c;
+  background-color: #81a1c1;
 }
 
 /* Contact form */
