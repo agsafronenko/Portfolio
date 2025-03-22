@@ -1,3 +1,4 @@
+/* Footer styling */
 footer {
   padding: 2rem 0;
   background-color: #0a0f1a;
@@ -69,6 +70,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
