@@ -124,3 +124,20 @@
     font-size: 0.8rem;
   }
 }
+
+/* Hide hero image on mobile landscape orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content {
+    justify-content: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

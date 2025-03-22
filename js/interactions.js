@@ -1,24 +1,3 @@
-// Orientation lock for mobile screens
-document.addEventListener("DOMContentLoaded", () => {
-  function manageOrientationLock() {
-    let viewportMeta = document.querySelector('meta[name="viewport"]');
-
-    if (window.innerWidth <= 768) {
-      // For mobile devices (≤ 768px), lock orientation to portrait
-      viewportMeta.setAttribute("content", "width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1, orientation=portrait");
-    } else {
-      // For larger devices (> 768px), use standard viewport without orientation lock
-      viewportMeta.setAttribute("content", "width=device-width, initial-scale=1.0");
-    }
-  }
-
-  // Call the function initially
-  manageOrientationLock();
-
-  // Update on window resize
-  window.addEventListener("resize", manageOrientationLock);
-});
-
 // Add fancy hover effect to project cards
 const projectCards = document.querySelectorAll(".project-card");
 projectCards.forEach((card) => {
