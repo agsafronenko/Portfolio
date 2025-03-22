@@ -15,6 +15,7 @@
   text-align: justify;
 }
 
+/* Contact methods section */
 .contact-methods {
   margin-top: 2rem;
   display: flex;
@@ -86,6 +87,7 @@
   color: var(--text);
 }
 
+/* Action buttons */
 .contact-actions {
   display: flex;
   gap: 0.3rem;
@@ -126,6 +128,7 @@
   background-color: #a3be8c;
 }
 
+/* Contact form */
 .contact-form {
   flex: 1;
   background-color: var(--card-bg);
@@ -205,6 +208,7 @@ button[type="submit"]:disabled {
   cursor: not-allowed;
 }
 
+/* Form status messages */
 .form-status {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -240,6 +244,7 @@ button[type="submit"]:disabled {
   padding-left: 1.5rem;
 }
 
+/* Tooltip */
 .tooltip {
   position: fixed;
   background: rgba(129, 199, 132, 0.9);
@@ -262,10 +267,7 @@ button[type="submit"]:disabled {
   }
 }
 
-#email {
-  background-color: rgba(15, 22, 36, 0.5);
-}
-
+/* Responsive design */
 @media (min-width: 769px) {
   .contact-container {
     flex-direction: row;
@@ -273,12 +275,7 @@ button[type="submit"]:disabled {
     align-items: stretch;
   }
 
-  .contact-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
+  .contact-info,
   .contact-form {
     flex: 1;
     display: flex;
@@ -339,13 +336,9 @@ button[type="submit"]:disabled {
     gap: 3rem;
   }
 
-  .contact-info {
-    width: 100%;
-  }
-
+  .contact-info,
   .contact-form {
     width: 100%;
-    margin: 0 auto;
   }
 
   .contact-methods {
