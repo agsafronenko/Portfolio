@@ -1,5 +1,18 @@
 // Initialize after DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // About Square Animation
+  gsap.to("#aboutSquare", {
+    scrollTrigger: {
+      trigger: "#aboutSquare",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+    duration: 1.5,
+    ease: "elastic.out(1, 0.3)",
+    scale: 1.05,
+    rotate: 3,
+  });
+
   setupImageControls();
   setTimeout(startImageSlideshow, 100);
 });

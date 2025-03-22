@@ -1,5 +1,24 @@
-// Background Particle Animation
 document.addEventListener("DOMContentLoaded", () => {
+  // Scroll Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Section Fade In Animation
+  const sections = document.querySelectorAll(".section-fade-in");
+  sections.forEach((section) => {
+    gsap.to(section, {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: "power3.out",
+    });
+  });
+
+  // Background Particle Animation
   // Create canvas element for particles
   const canvas = document.createElement("canvas");
   canvas.id = "particleCanvas";
