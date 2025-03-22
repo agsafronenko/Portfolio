@@ -8,11 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle mobile menu
   mobileMenuBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    navLinks.style.top = "0";
-    navLinks.classList.add("nav-active");
-    closeMenu.style.display = "flex";
-    mobileMenuBtn.classList.add("active");
-    document.body.style.overflow = "hidden";
+
+    // Hide the close button first to avoid overlap issues
+    closeMenu.style.display = "none";
+
+    // setTimeout to ensure the close button appears AFTER the menu animation starts
+    setTimeout(() => {
+      navLinks.style.top = "0";
+      navLinks.classList.add("nav-active");
+      closeMenu.style.display = "flex";
+      mobileMenuBtn.classList.remove("active");
+      document.body.style.overflow = "hidden";
+    }, 10); // Small delay to ensure proper rendering sequence
   });
 
   // Close menu function

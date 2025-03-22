@@ -165,6 +165,7 @@ nav {
     position: fixed;
     top: 1rem;
     right: 1rem;
+    display: none;
     background: transparent;
     border: 1px solid var(--accent);
     border-radius: 50%;
