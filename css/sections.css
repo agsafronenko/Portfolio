@@ -1,3 +1,4 @@
+/* Section styling */
 section {
   padding: 100px 0;
 }
@@ -27,6 +28,7 @@ section {
   transform: rotate(-1deg);
 }
 
+/* Section reveal animation */
 .section-fade-in {
   opacity: 0;
   transform: translateY(30px);
