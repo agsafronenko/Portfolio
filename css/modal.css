@@ -1,3 +1,4 @@
+/* Modal base styling */
 .location-modal {
   display: none;
   position: fixed;
@@ -88,14 +89,14 @@
   display: block;
 }
 
-/* Map Container */
+/* Map container */
 .map-container {
   border-radius: 10px;
   overflow: hidden;
   height: 450px;
 }
 
-/* Gallery */
+/* Gallery styling */
 .gallery-container {
   position: relative;
 }
@@ -141,6 +142,7 @@
   border-bottom-right-radius: 10px;
 }
 
+/* Gallery controls */
 .gallery-controls {
   display: flex;
   justify-content: center;
