@@ -189,7 +189,7 @@ const techCategories = [
   },
   {
     prefix: "I leverage databases like ",
-    technologies: ["PostgreSQL", "MongoDB", "MySQL"],
+    technologies: ["PostgreSQL", "MongoDB", "MySQL", "SQLite"],
   },
   {
     prefix: "I version control through ",
